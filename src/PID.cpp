@@ -26,5 +26,8 @@ void PID::UpdateError(double cte) {
 }
 
 double PID::TotalError() {
+    double steering = 0.0;
+    steering = - Kp*p_error - Kd*d_error - Ki*i_error;
+    return steering;
 }
 
