@@ -1,0 +1,11 @@
+1. Effects of P, I and D
+P term tries to reduce CTE based on a linear relationship.
+D term can help reduce the oscilications caused by the P term.
+I term will help reduce the sum of CTE over the entire running horizon.
+The properties of the gains are aligned with the observations during tuning.
+
+2. The final PID parameters are obtained through manual tuning.
+To begin with, all P, I and D terms are set to 0.
+Then P term is tuned to achieve a reasonable tracking performance with certain osciliations.
+Next, D term is tuned to reduce the oscilation.
+At last, a small I term is added to further reduce the overall CTE, especially for the sharp turn.
